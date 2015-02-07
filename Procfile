@@ -1,1 +1,1 @@
-web: bin/hubot -a twitter -n shurondamedesu
+web: bin/hubot -a twitter-userstream

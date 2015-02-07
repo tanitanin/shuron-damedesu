@@ -18,7 +18,8 @@
     "hubot-twitter": "~2.1.1",
     "hubot-redis-brain": "0.0.2",
     "hubot-scripts": "~2.5.16",
-    "hubot-slack": "~3.2.1"
+    "hubot-slack": "~3.2.1",
+    "hubot-twitter-userstream": "0.0.3"
   },
   "engines": {
     "node": "0.10.x"
