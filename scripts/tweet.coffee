@@ -15,5 +15,11 @@ space = "‌‌"
 module.exports = (robot) ->
 
   robot.respond /修論/i, (msg) ->
-    msg.reply attach("修論ダメです", space, random_int(30))
+    text = "修論ダメです"
+    for i in [1..10]
+      try
+        msg.reply attach(text, space, random_int(70-text.length/2))
+        break
+      catch err
+        continue
 
