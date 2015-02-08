@@ -22,6 +22,7 @@
     "hubot-twitter-userstream": "0.0.3"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "0.10.x",
+    "npm": "0.1.x"
   }
 }
