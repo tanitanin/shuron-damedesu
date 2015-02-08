@@ -16,9 +16,11 @@ module.exports = (robot) ->
 
   robot.respond /修論/i, (msg) ->
     text = "修論ダメです"
+    temp = text
     for i in [1..10]
+      temp = text if temp.length >= 140
       try
-        msg.reply attach(text, space, random_int(70-text.length/2))
+        msg.reply attach(temp, space, random_int(70-temp.length/2))
         break
       catch err
         continue
