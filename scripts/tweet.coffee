@@ -1,3 +1,8 @@
+# Description:
+#   shuron is NOT OK.
+#
+# Commands:
+#   修論 - Hubot replies "修論ダメです"
 
 random_int = (num) ->
   Math.floor(Math.random()*num)
@@ -15,6 +20,7 @@ space = "‌‌"
 module.exports = (robot) ->
 
   robot.respond /修論/i, (msg) ->
+    robot.logger.info "Respond by #{msg}"
     text = "修論ダメです"
     temp = text
     for i in [1..10]
