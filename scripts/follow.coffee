@@ -8,7 +8,7 @@
 module.exports = (robot) ->
 
   robot.respond /フォローして/g, (msg) ->
-    robot.logger.info "Follow requested by #{msg.data.user.screen_name}"
+    robot.logger.info "Follow requested by #{msg.user}"
     robot.adapter.join msg.user
 
 #  robot.respond /フォローやめて/g, (msg) ->
