@@ -20,7 +20,13 @@ space = "‌‌"
 module.exports = (robot) ->
 
   robot.respond /修論/i, (msg) ->
-    robot.logger.info "Respond #{JSON.stringify(msg)}"
+    cache = []
+    json = JSON.stringify msg, (key, value) ->
+      if typeof value is 'object' and value isnt null
+        return if -1 < cache.indexOf value
+        cache.push value
+      return value
+    robot.logger.info "Respond #{json}"
     text = "修論ダメです"
     temp = text
     for i in [1..10]
