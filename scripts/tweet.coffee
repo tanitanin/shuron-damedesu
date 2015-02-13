@@ -20,7 +20,7 @@ space = "‌‌"
 module.exports = (robot) ->
 
   robot.respond /修論/i, (msg) ->
-    robot.logger.info "Respond #{msg.serialize}"
+    robot.logger.info "Respond #{JSON.stringify(msg)}"
     text = "修論ダメです"
     temp = text
     for i in [1..10]
