@@ -1,15 +1,14 @@
 # Description:
-#   Refollow/unfollow users
+#   Refollow users
 #
-# Commands:
-#   フォローして - Follow you
-#   フォローやめて - Unfollow you
 
 module.exports = (robot) ->
 
-  robot.respond /フォローして/g, (msg) ->
-    robot.logger.info "Follow requested by #{msg.user}"
-    robot.adapter.join msg.user
+#  robot.respond /フォローして/g, (msg) ->
+#    # フォローしてないユーザのデータは取得できないらしい...?
+#    # msg.user が undefined になってる
+#    robot.logger.info "Follow requested by #{msg.user}"
+#    robot.adapter.join msg.user
 
 #  robot.respond /フォローやめて/g, (msg) ->
 #    robot.logger.info "Unfollow requested by #{msg.user.name}"
