@@ -1,6 +1,6 @@
 {
   "name": "shuron-damedesu",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "author": "tanitanin",
   "description": "Shuron is NOT OK.",
@@ -22,7 +22,7 @@
     "hubot-twitter-userstream": "0.0.3"
   },
   "engines": {
-    "node": "0.10.x",
-    "npm": "0.1.x"
+    "node": ">=0.10.x",
+    "npm": ">=0.1.x"
   }
 }
