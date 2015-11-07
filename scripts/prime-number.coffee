@@ -24,7 +24,7 @@ module.exports = (robot) ->
     i = Math.floor(Math.random() * primeNumbers.length)
     if i >= primeNumbers.length then i = primeNumbers - 1
     pn = primeNumbers[i]
-    m = "好きなの素数は" + pn + "です．修論ダメです"
+    m = "好きな素数は" + pn + "です．修論ダメです"
 
     msg.send m
 
